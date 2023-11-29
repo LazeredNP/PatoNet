@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/css_index.css">
+</head>
+<body>
+    <!-- Imagem do Banner -->
+    <div>
+        <img src="/img/BANNER.png" class="img-fluid" alt="Responsive imag" id="banner">
+    </div>
+
+
+    <!-- Navbar responsiva junto com a logo -->
+    <div class="nav_container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <img src="/img/LOGO.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="implementacao-brasil.html">Implementação no Brasil</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Cria a seção da linha do tempo e o card inicial do lado esquerdo -->
+    <section style="background-color: #ffffff;" class="sessao-timeline">
+      <div class="container py-5">
+        <div class="main-timeline">
+          <div class="timeline left">
+            <div class="card">
+              <div class="card-body p-4">
+                <h3>1G</h3>
+                <ul>
+                  <li>Tecnologia analógica que foi desenvolvida na década de 1980;</li>
+                  <li>O objetivo era possibilitar chamadas através de dispositivos, sem a necessidade de fios;</li>
+                  <li>Primeira rede que permitiu ao usuário continuar em ligação em qualquer região onde havia um serviço de rede de algum operador de rede móvel;</li>
+                  <li>As chamadas de voz nessa geração tinham qualidade de áudio limitada, recursos de segurança básicos e dificuldade em manter muitas chamadas simultâneas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cria o próximo card do lado direito -->
+          <div class="timeline right">
+            <div class="card">
+              <div class="card-body p-4">
+                <h3>2G</h3>
+                <ul>
+                  <li>A segunda geração foi desenvolvida em 1990 para superar essas limitações existentes na 1G e houve uma evolução para o uso de sinais digitais;</li>
+                  <li>Possibilitou além de ligações de voz sem a necessidade da utilização de fios, ele também poderiam se comunicar com mensagens de texto através do aplicativo SMS e com imagens, através do aplicativo MMS;</li>
+                  <li>A maior quantidade de usuários, tendo uma melhor qualidade de comunicação, a rede oferecia uma taxa de dados de até 9,6 Kbps, porém esta rede já atingiu o pico de mais de 300 Kbps, tendo uma largura de banda de 1800 Khz.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cria o próximo card do lado esquerdo -->
+          <div class="timeline left">
+            <div class="card">
+              <div class="card-body p-4">
+                <h3>3G</h3>
+                <ul>
+                  <li>Iniciado pela European Telecommunications Standards Institute(ETSI) como um projeto de padronização de rede;</li>
+                  <li>Lançada comercialmente em 2001 e implementada no Brasil em 2007;</li>
+                  <li>Permitiu uma maior capacidade de rede e velocidade de download de aproximadamente 2 Mbps;</li>
+                  <li>Serviços mais avançados, incluindo a possibilidade de fornecer serviços multimídia que combinam voz e dados, como videochamadas, aplicativos baseados em localização e jogos mobile online.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cria o próximo card do lado direito -->
+          <div class="timeline right">
+            <div class="card">
+              <div class="card-body p-4">
+                <h3>4G</h3>
+                <ul>
+                  <li>Geração predominante no mercado comercial;</li>
+                  <li>Lançada comercialmente em 2010 e implementada no Brasil em 2012;</li>
+                  <li>Velocidade de download de 100 Mbps e 50 Mbps de Upload;</li>
+                  <li>Chamadas através da rede WiFi.</li>
+                  <li>Melhoramento da cobertura de rede em áreas rurais e aprimoramento de serviços online, como por exemplo o streaming de vídeo;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cria o próximo card do lado esquerdo -->
+          <div class="timeline left">
+            <div class="card">
+              <div class="card-body p-4">
+                <h3>5G</h3>
+                <ul>
+                  <li>Rede lançada comercialmente em 2020;</li>
+                  <li>Latência entre 5ms e 20ms;</li>
+                  <li>IOT (Internet das coisas) permite a conexão entre diferentes tipos de tecnologia, principalmente a aplicações maiores e confiabilidade;</li>
+                  <li>O Sistema de rádio RAN conectará de forma massiva diversos usuários, objetos e sensores;</li>
+                  <li>O Network Slicing pode criar instâncias virtuais dedicadas a diferentes serviços, cada fatia será isolada e controlada por um plano para o usuário e a segmentação da rede pelas operadoras. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrossel com a imagem dos integrantes -->
+    <center><h4>QUEM SOMOS NÓS:</h4></center>
+    <br>
+
+    <div class="containerCarrossel">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- imagem integrante 1 -->
+              <div class="carousel-item active">
+                <img src="/img/Integrantes/Ellen.jpeg" alt="Imagem 1" class="d-block mx-auto" width="150" height="150">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <!-- imagem integrante 2 -->
+              <div class="carousel-item">
+                <img src="/img/Integrantes/Clara.jpeg" alt="Imagem 2" class="d-block mx-auto" width="150" height="150">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <!-- imagem integrante 3 -->
+              <div class="carousel-item">
+                <img src="/img/Integrantes/Filipe.jpeg" alt="Imagem 3" class="d-block mx-auto" width="150" height="150">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <!-- imagem integrante 4 -->
+              <div class="carousel-item">
+                <img src="/img/Integrantes/Jovana.jpeg" alt="Imagem 4" class="d-block mx-auto" width="150" height="150">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <!-- imagem integrante 5 -->
+              <div class="carousel-item">
+                <img src="/img/Integrantes/Vitor.jpeg" alt="Imagem 5" class="d-block mx-auto" width="150" height="150">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+            <!-- Botão de voltar imagem do carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <!-- Botão de ir para a próxima imagem do carrossel -->
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <!-- Feedback -->
+    <div class="container-modal">
+      <div class="feedback d-flex flex-column justify-content-center align-items-center">
+        <h1>Sua opinião importa!</h1>
+        <h3>Envie seu feedback</h3>
+    
+        <br>
+    
+        <!-- Botão do feedback -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          feedback
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </button>
+    
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Header do modal -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel" style="color: black;">Envie um feedback:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+                <!-- Corpo do modal -->
+              <div class="modal-body">
+                <form action="/enviar" method="post">
+                  <textarea name="texto" rows="4" cols="50" placeholder="Digite aqui seu feedback:" required></textarea>
+                  <br>
+                  <input type="submit" value="Enviar">
+              </form>
+              </div>
+
+              <!-- Footer do modal -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+ 
+    <!-- <script src="/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="rodape">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Formulário para se inscrever na newsletter -->
+          <div class="form-container">
+            <h5>Se inscreva no nosso newsletter</h5>
+
+            <form method="post" action="/inscricao">
+              <label for="email">Endereço de e-mail:</label>
+              <input type="email" name="email" class="form-control" required>
+              <button type="submit" class="btn btn-primary">Inscrever-se</button>
+          </form>
+          </div>
+          <br><br><br><br><br>
+          <!-- Contatos -->
+          <div class="contato">
+            <h5>Contate-nos:</h5>
+            <p>patonet.ofc@gmail.com</p>
+            <p>Ou envie um feedback!</p>
+          </div>
+        </div>
+        <!-- Imagem da logo e da logo IFC -->
+        <div class="col-md-6 text-center">
+          <div class="container-img">
+            <img src="/img/logo-ifc.png" alt="" class="img-fluid logo_ifc"> <!-- Adição da classe "img-fluid" para imagem responsiva -->
+            <img src="/img/LOGO.png" alt="" class="img-fluid" width="150" height="150"> <!-- Adição da classe "img-fluid" para imagem responsiva -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
